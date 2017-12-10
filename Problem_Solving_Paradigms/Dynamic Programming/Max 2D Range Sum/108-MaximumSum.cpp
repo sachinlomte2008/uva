@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-long long int a[110][110];
+long long int a[200][200];
 int n;
 
 long long int kadens(long long int b[]){
@@ -17,12 +17,13 @@ long long int kadens(long long int b[]){
 
 int main(){
 
-	while(scanf("%d",&n)==1){
+	while(scanf("%d ",&n)==1){
+		//printf("%d : ",n);
 		long long temp_ans=LLONG_MIN;
 		long long ans = LLONG_MIN;
 		for(int i=0;i<n;i++){
 			for(int j=0;j<n;j++){
-				cin>>a[i][j];
+				scanf("%d ",&a[i][j]);
 				temp_ans=max(a[i][j],temp_ans);
 			}
 		}
