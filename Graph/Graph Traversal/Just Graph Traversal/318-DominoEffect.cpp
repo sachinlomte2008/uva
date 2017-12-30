@@ -18,8 +18,7 @@ int main(){
   int counter=0;	
 	while(scanf("%d%d",&m,&n)==2 && (m!=0 && n!=0)){
 		int graph[m+1][m+1];
-	  
-		//fill( &graph[0][0], &graph[0][0] + sizeof(graph) , 0 );
+
 		for(int i=0;i<=m;i++)
 			for(int j=0;j<=m;j++)
 				graph[i][j]=0;
